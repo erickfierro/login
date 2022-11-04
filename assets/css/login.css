@@ -1,0 +1,170 @@
+:root {
+    --fondo: black;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e3e8eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login {
+    background-color: white;
+    width: 450px;
+    height: 75%;
+    border-radius: 6px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    padding: 30px 30px;
+}
+
+.title {
+    display: flex;
+    align-items: baseline;
+}
+
+.title h1 {
+    font-weight: 700;
+    font-size: 22px;
+    font-style: normal;
+    color: #000000;
+}
+
+.title i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.form-login p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #636363;
+}
+
+#form {
+    padding-top: 30px;
+}
+
+#form input {
+    width: calc(100% - 2px - 28px);
+    padding: 14px 0;
+    border: none;
+    border: 2px solid #e3e8eb;
+    outline: 0;
+    border-radius: 6px;
+    padding-left: 14px;
+    font-size: 16px;
+    margin: 8px 0;
+    padding-right: 14px;
+}
+
+#form input::placeholder {
+    color: #bababa;
+}
+
+#form input:focus {
+    outline: none;
+    border: none;
+    /* border: 1px solid #2b4bff; */
+    background-color: #e3e8eb;
+}
+
+.form-login .google {
+    background-color: #db5043;
+    color: white;
+}
+
+.form-login .facebook {
+    background-color: #3d5a98;
+    color: white;
+}
+
+
+.form-login .btn-login {
+    background-color: #2b4bff;
+    color: #FFFFFF;
+    margin: 40px 0;
+}
+
+.button {
+    letter-spacing: 1px;
+    width: 100%;
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 0;
+    align-items: center;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    padding: 16px 0;
+    font-size: 12PX;
+}
+
+.button i {
+    margin-left: 5px;
+}
+
+#form a {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    color: #4285F4;
+    margin-top: 5px;
+}
+
+.form-login .sign > i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.form-login .sign {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.form-login .or-sign {
+    margin: 40px 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Media query smartphone */
+@media screen and (max-width: 767px) {
+    .form-login {
+        width: 100vw;
+        height: 100vh;
+        padding-top: 140px;
+    }
+    #form input {
+        padding: 16px 0;
+        padding-left: 15px;
+        font-size: 16px;
+        width: calc( 100% - 20px );
+    }
+    .button {
+        font-size: 12px;
+    }
+    .form-login .sign > i {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .form-login {
+        width: 50%;
+    }
+}

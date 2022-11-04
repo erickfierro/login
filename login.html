@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/login.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8a7783fe01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-login">
+            <div class="title">
+                <i class="fa-solid fa-circle-user"></i>
+                <h1>Inicio de Sesion</h1>
+            </div>
+            <p>¡Hola, bienvenido de nuevo a nuestra tienda!</p>
+            <form id="form">
+                <input type="text" name="correo" placeholder="Correo" required>
+                <input type="password" name="pass" placeholder="Contraseña" required>
+                <a href="#">Olvidaste la contraseña?</a>
+                <button class="btn-login button" type="submit" name="ingresar">INICIAR SESION<i class="fa-solid fa-caret-right"></i></button>
+            </form>
+            <p class="or-sign">-------- O ingresa con --------</p>
+            <button class="button sign google"><i class="fa-brands fa-google"></i>GOOGLE</button>
+            <button class="button sign facebook"><i class="fa-brands fa-facebook"></i>FACEBOOK</button>
+        </div>
+    </div>
+</body>
+</html>
